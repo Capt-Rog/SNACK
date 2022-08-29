@@ -1,1 +1,1 @@
-![Snack Logo](https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/snack.png?raw=true)
+<p align="center"><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/snack.png?raw=true"/></p>
