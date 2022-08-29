@@ -3,7 +3,7 @@
 <h1 align="center" style="color:green;font-size:75px;"><em>Simple Network Automated Communications Kit</em></h1>
 
 ### _*Description*:_
-    SNACK was designed to perform complex network interactions in simple easy to use tool.
+    SNACK was designed to perform complex network interactions in a simple easy to use tool.
     This tool can perform packet crafting, tcp port scans, os discovery scans, and more! 
     See Usage below! 
 
