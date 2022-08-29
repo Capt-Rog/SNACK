@@ -25,4 +25,4 @@
    -udp. This function will allow for you to transmit a custom packet with a 
    custom payload. _*The terminal will prompt you for additional information.*_)
     
-<p><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/arguments.png?raw=true" width="1300"/></p>
+<p><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/arguments.png?raw=true" width="800"/></p>
