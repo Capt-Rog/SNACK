@@ -8,6 +8,7 @@
     See Usage below! 
 
 ### _*Imports*_:
+    Built on Python 3.10
    <p><img src=https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/imports.png?raw=true" width="300"/></p>
 
 ### _*Usage:*_
