@@ -58,8 +58,15 @@ for a more robust formatted output._
 Currently the tool does not support this function, however prior to running any scan you could modify
 the source code to include a custom MAC address or IPv4 address. See Below: 
 
-* Source Code: <p><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/Prior_To_Mod_IP.png?raw=true" width="800"/></p>
-* Modified Source Code: <p><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/ip_spoof_scan.png?raw=true" width="800"/></p>
+_Note: To observe the results of your scan you will need to run a packet capture tool such as TCPDump
+or Wireshark. Set a filter on your spoofed IP address as the destination IP._
+
+    Wireshark Filter Example: ip.dst == your.spoofed.ip.address
+    TCPDump Filter Example: sudo tcpdump dst your.spoofed.ip.address
+* Source Code: 
+<p><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/Prior_To_Mod_IP.png?raw=true" width="800"/></p>
+* Modified Source Code: 
+<p><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/ip_spoof_scan.png?raw=true" width="800"/></p>
     
     Observe in the modified source code that "src='Your_IP_Here'" was added to the IP field under sr1.
     To add a spoofed MAC address you will need to change the function from sr1 to srp1 and add the Ether()
