@@ -7,7 +7,7 @@
     This tool can perform packet crafting, tcp port scans, os discovery scans, and more! 
     See Usage below! 
 
-## _*Imports*_:
+## _*Imports/Dependencies*_:
     Built on Python 3.10
    <p><img src=https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/imports.png?raw=true" width="300"/></p>
 
@@ -54,3 +54,16 @@ that is returned, but a later version will be using the fixed sniff() function w
 for a more robust formatted output._ 
     
     Source: https://stackoverflow.com/questions/65030510/filter-in-scapy-function-sniff-says-libpcap-is-not-available
+###3. Configuration, Spoofing MAC address or IPv4 Address for Scanning: 
+Currently the tool does not support this function, however prior to running any scan you could modify
+the source code to include a custom MAC address or IPv4 address. See Below: 
+
+* Source Code: <p><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/Prior_To_Mod_IP.png?raw=true" width="800"/></p>
+* Modified Source Code: <p><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/ip_spoof_scan.png?raw=true" width="800"/></p>
+    
+    Observe in the modified source code that "src='Your_IP_Here'" was added to the IP field under sr1.
+    To add a spoofed MAC address you will need to change the function from sr1 to srp1 and add the Ether()
+    layer to the srp1 function. See Below: 
+    
+* MAC Address Spoof Code: <p><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/MAC_Spoof_Scans.png?raw=true" width="800"/></p>
+    
