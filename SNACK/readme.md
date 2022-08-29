@@ -63,10 +63,9 @@ or Wireshark. Set a filter on your spoofed IP address as the destination IP._
 
     Wireshark Filter Example: ip.dst == your.spoofed.ip.address
     TCPDump Filter Example: sudo tcpdump dst your.spoofed.ip.address
-* Source Code: 
-<p><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/Prior_To_Mod_IP.png?raw=true" width="800"/></p>
-* Modified Source Code: 
-<p><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/ip_spoof_scan.png?raw=true" width="800"/></p>
+    
+* Source Code: <p><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/Prior_To_Mod_IP.png?raw=true" width="800"/></p>
+* Modified Source Code: <p><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/ip_spoof_scan.png?raw=true" width="800"/></p>
     
     Observe in the modified source code that "src='Your_IP_Here'" was added to the IP field under sr1.
     To add a spoofed MAC address you will need to change the function from sr1 to srp1 and add the Ether()
