@@ -1,2 +1,2 @@
 <p align="Center"><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/snack_logo.png?raw=true" width="150"/></p>
-<h1 align="center" style="color:86FF33;font-size:75px;"><em>Simple Network Automated Communications Kit</em></h1>
+<h1 align="center" style="color:green;font-size:75px;"><em>Simple Network Automated Communications Kit</em></h1>
