@@ -2,16 +2,16 @@
 
 <h1 align="center" style="color:green;font-size:75px;"><em>Simple Network Automated Communications Kit</em></h1>
 
-### _*Description*:_
+## _*Description*:_
     SNACK was designed to perform complex network interactions in a simple easy to use tool.
     This tool can perform packet crafting, tcp port scans, os discovery scans, and more! 
     See Usage below! 
 
-### _*Imports*_:
+## _*Imports*_:
     Built on Python 3.10
    <p><img src=https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/imports.png?raw=true" width="300"/></p>
 
-### _*Usage:*_
+## _*Usage:*_
     Ex. "sudo python3 snack.py -t 192.168.1.1 -oscn" (This will return information
     about the operating system) 
    _Options:_
@@ -27,9 +27,9 @@
     
 <p><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/arguments.png?raw=true" width="800"/></p>
 
-### _*Configuration/Troubleshooting:*_
+## _*Configuration/Troubleshooting:*_
 
-#####1. Common Error (Resolving MAC addresses): 
+####1. Common Error (Resolving MAC addresses): 
     Warning: "MAC Address to reach destination not found. Using broadcast."
     
 This error occurs when the tool is unable to resolve the broadcast address for your request
@@ -40,7 +40,7 @@ destination set as follows: dst="FF:FF:FF:FF:FF:FF"
     
     Ex. srp(Ether(dst="FF:FF:FF:FF:FF:FF")/IP(dst=target)/ICMP(id=100), timeout=2)
     
-####2. Mac OS Functionality Issues (sniff(filter="@nything"")):
+###2. Mac OS Functionality Issues (sniff(filter="@nything"")):
 <p><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/libpcap_error.png?raw=true" width="800"/></p>
 This error occurs because backend functionality in dyld_find does not search any of the directories
 that _brew_ installs libpcap into. To fix this you can move one of the following files to usr/local/lib/
