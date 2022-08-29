@@ -29,7 +29,7 @@
 
 ## _*Configuration/Troubleshooting:*_
 
-####1. Common Error (Resolving MAC addresses): 
+#### 1. Common Error (Resolving MAC addresses): 
     Warning: "MAC Address to reach destination not found. Using broadcast."
     
 This error occurs when the tool is unable to resolve the broadcast address for your request
@@ -40,7 +40,7 @@ destination set as follows: dst="FF:FF:FF:FF:FF:FF"
     
     Ex. srp(Ether(dst="FF:FF:FF:FF:FF:FF")/IP(dst=target)/ICMP(id=100), timeout=2)
     
-###2. Mac OS Functionality Issues (sniff(filter="@nything"")):
+### 2. Mac OS Functionality Issues (sniff(filter="@nything"")):
 <p><img src="https://github.com/Capt-Rog/SNACK/blob/master/SNACK/Images/libpcap_error.png?raw=true" width="800"/></p>
 This error occurs because backend functionality in dyld_find does not search any of the directories
 that _brew_ installs libpcap into. To fix this you can move one of the following files to usr/local/lib/
@@ -54,7 +54,7 @@ that is returned, but a later version will be using the fixed sniff() function w
 for a more robust formatted output._ 
     
     Source: https://stackoverflow.com/questions/65030510/filter-in-scapy-function-sniff-says-libpcap-is-not-available
-###3. Configuration, Spoofing MAC address or IPv4 Address for Scanning: 
+### 3. Configuration, Spoofing MAC address or IPv4 Address for Scanning: 
 Currently the tool does not support this function, however prior to running any scan you could modify
 the source code to include a custom MAC address or IPv4 address. See Below: 
 
