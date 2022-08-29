@@ -9,18 +9,15 @@ import random
 parser = argparse.ArgumentParser(description='SNACK - Simple Network Automated Communication Kit')
 parser.add_argument('-t', '--target', required=True, type=str, help='designate your target IP or subnet. Ex. 10.10.10.12 OR 10.10.10.0/24')
 parser.add_argument('-hscn', '--host_discovery_scan', action='store_true', help='Detects hosts responding to ICMP (will potentially miss hosts configured not to respond to ICMP)')
-parser.add_argument('-pscn', '--port_scan', action='store_true', help='Detects open TCP ports on a single target')
+parser.add_argument('-pscn', '--port_scan', action='store_true', help='Detects open TCP ports on a target')
 parser.add_argument('-oscn', '--os_scan', action='store_true', help='This will detect the OS of a single target, do not use a subnet designation')
-parser.add_argument('-pcap', '--packet_capture', action='store_true', help='Captures traffic and outputs a .pcap file')
 parser.add_argument('-asd', '--anomalous_service_detection', action='store_true', help='Looks for open ports that are not associated with any specific service')
 parser.add_argument('-pc', '--packet_crafting', action='store_true', help='Allows you to craft a custom layer 4 packet and send it to your designated target')
-parser.add_argument('-of', '--output_file', action='store_true', help='Outputs a file instead of printing to console')
-parser.add_argument('-co', '--console_output', action='store_true', help='Will output results to the console instead of a file')
 parser.add_argument('-udp', '--user_datagram_protocol', action='store_true', help='Used to designate the layer 4 protocol udp in packet crafting')
 parser.add_argument('-tcp', '--transmission_control_protocol', action='store_true', help='Used to designate the layer 4 tcp protocol in packet crafting')
 parser.add_argument('-spf', '--spoof_source', action='store_true', help='will allow you to spoof source IP address for packet crafting')
 parser.add_argument('-icmp', '--internet_control_message_protocol', action='store_true', help='Used to designate the layer 4 icmp protocol in packet crafting')
-parser.add_argument('-http', '--http_request', action='store_true', help='This function is used to transmit custom http requests')
+#parser.add_argument('-http', '--http_request', action='store_true', help='This function is used to transmit custom http requests') working on this
 args = parser.parse_args()
 
 
@@ -135,10 +132,10 @@ def craft(target):
         else:
             quit()
 
-    elif args.http_request:
-        load_layer("http")
-        uri = input("Please provide a uniform resource identifier: (If none use '/')")
-        http_request(target, uri, display=False)
+    #elif args.http_request:
+       # load_layer("http")
+       # uri = input("Please provide a uniform resource identifier: (If none use '/')")
+       # http_request(target, uri, display=False)
 
     else:
         print("No action selected, try -hscn, oscn, etc.")
